@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: today12
+  name: todayhapy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: today12
+      app: todayhapy
   template:
     metadata:
       labels:
-        app: today12
+        app: todayhapy
     spec:
       containers:
-      - image: okteto.dev/today12:latest
-        name: today12
+      - image: okteto.dev/todayhapy:latest
+        name: todayhapy
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "99af137f-3a11-4df6-9216-c8a37100b991"
+          value: "8bf0a323-8284-47d4-aeef-c87f34bcf37e"
         - name: Vless_Path
           value: "/fgh76u4wrgjyu"
         - name: Vmess_UUID
-          value: "99af137f-3a11-4df6-9216-c8a37100b991"
+          value: "8bf0a323-8284-47d4-aeef-c87f34bcf37e"
         - name: Vmess_Path
           value: "/fdbjui75u56ehtd"
         - name: Share_Path
